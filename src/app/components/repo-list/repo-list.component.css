@@ -1,0 +1,35 @@
+.container {
+	border: 1px solid #212121;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(33,33,33,0.75);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(33,33,33,0.75);
+	box-shadow: 0px 0px 3px 0px rgba(33,33,33,0.75);
+}
+
+.container__repo-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container__repo-info-button > button {
+	padding: 15px 30px;
+	background: #212121;
+	border-radius: 10px;
+	color: white;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.container__repo-info-bio {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.container__divisor {
+	border: 1px solid #212121;
+	margin: 10px;
+}
