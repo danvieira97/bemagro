@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="container__title">
+		<h3>Registre-se - Bem Agro</h3>
+	</div>
+	<div class="container__form">
+		<form>
+			<input
+				placeholder="Digite seu e-mail"
+				type="email"
+				name="email"
+				[formControl]="email"
+			/>
+			<input
+				placeholder="Digite sua senha"
+				type="password"
+				name="password"
+				[formControl]="password"
+			/>
+			<input
+				placeholder="Confirme sua senha"
+				type="password"
+				name="confirmPassword"
+				[formControl]="confirmPassword"
+			/>
+			<button (click)="register()">Registrar</button>
+		</form>
+	</div>
+	<div class="container__login">
+		<p>Já tem uma conta? Clique no botão abaixo para realizar o login</p>
+		<button (click)="login()">Entrar</button>
+	</div>
+</div>
