@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="container__title">
+		<h1>Procure um usuário do Github</h1>
+	</div>
+	<div class="container__form">
+		<input
+			placeholder="Digite o nome do usuário"
+			type="text"
+			[formControl]="user"
+		/>
+		<button (click)="searchUser()">Buscar</button>
+	</div>
+	<div class="container__users">
+		<app-user-list
+			*ngIf="userData.login"
+			[avatar_url]="userData.avatar_url"
+			[name]="userData.name"
+			[login]="userData.login"
+			[location]="userData.location"
+			[bio]="userData.bio"
+		></app-user-list>
+	</div>
+</div>
