@@ -1,0 +1,19 @@
+<div class="card">
+	<div class="card__img">
+		<img src="{{ avatar_url }}" alt="profile-image" />
+	</div>
+	<div class="card__name">
+		<h3>{{ name }}</h3>
+	</div>
+	<div class="card__info">
+		<p>User: @{{ login }}</p>
+		<p>Localização: {{ location }}</p>
+		<div class="card__description">
+			<p>Descrição: {{ bio }}</p>
+		</div>
+	</div>
+	<div class="card__buttons">
+		<button (click)="userDetails(login)">Ver mais</button>
+		<button>Salvar usuário</button>
+	</div>
+</div>
