@@ -1,0 +1,52 @@
+<div class="container">
+	<div class="container__user">
+		<div class="container__user-img">
+			<img alt="user-profile" src="{{ userData.avatar_url }}" />
+		</div>
+		<div class="container__user-name">
+			<h1>{{ userData.name }}</h1>
+		</div>
+	</div>
+	<div class="container__buttons">
+		<button>Salvar Usuário</button>
+		<button>Editar Endereço</button>
+		<button [routerLink]="'/home'">Voltar</button>
+		<div class="container__divisor"></div>
+	</div>
+	<div class="container__user-info">
+		<div class="container__user-info-createdat">
+			<p>Usuário desde: {{ userData.created_at }}</p>
+		</div>
+		<div class="container__user-info-location">
+			<p>{{ userData.location }}</p>
+		</div>
+		<div class="container__user-info-followers">
+			<p>Seguidores: {{ userData.followers }}</p>
+		</div>
+		<div class="container__user-info-following">
+			<p>Seguindo: {{ userData.following }}</p>
+		</div>
+		<div class="container__user-info-linkedin">
+			<button>Linkedin</button>
+		</div>
+		<div class="container__user-info-email">
+			<button>Email</button>
+		</div>
+		<div class="container__user-info-github">
+			<button>Github</button>
+		</div>
+	</div>
+	<div class="container__user-info-bio">
+		<h3>Descrição</h3>
+		<p>
+			{{ userData.bio }}
+		</p>
+	</div>
+	<div class="container__user-location">
+		<app-map [location]="userData.location"></app-map>
+	</div>
+	<div class="container__user-repo">
+		<h3>Repositórios</h3>
+		<!-- <app-repo-list></app-repo-list> -->
+	</div>
+</div>

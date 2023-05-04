@@ -1,0 +1,102 @@
+.container {
+	border: 1px #212121 solid;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+}
+
+.container__user {
+	display: flex;
+	align-items: center;
+}
+
+.container__user-img > img {
+	max-width: 150px;
+	border-radius: 100%;
+}
+
+.container__user-name > h1 {
+	margin-left: 30px;
+}
+
+.container__buttons > button {
+	padding: 5px 10px;
+	margin: 10px;
+	background: #212121;
+	border-radius: 10px;
+	color: white;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.container__buttons > button:hover {
+	background: #101010;
+}
+
+.container__buttons > button:nth-child(3) {
+	padding: 5px 10px;
+	border: #212121 1px solid;
+	margin: 10px;
+	background: #ffffff;
+	border-radius: 10px;
+	color: #212121;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.container__buttons > button:nth-child(3):hover {
+	background-color: whitesmoke;
+}
+
+.container__user-info-linkedin > button {
+	padding: 15px 30px;
+	margin: 10px;
+	background: #0022ff;
+	border-radius: 10px;
+	color: white;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.container__user-info-email > button {
+	padding: 15px 30px;
+	margin: 10px;
+	background: #e40a0a;
+	border-radius: 10px;
+	color: white;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.container__user-info-github > button {
+	padding: 15px 30px;
+	margin: 10px;
+	background: #212121;
+	border-radius: 10px;
+	color: white;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.container__user-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container__divisor {
+	border: 1px solid #212121;
+}
+
+.container__user-info-bio > p {
+	margin-top: 10px;
+}
+
+.container__user-repo {
+	margin-top: 20px;
+}
+
+.container__user-location {
+	margin-top: 20px;
+}
