@@ -12,7 +12,7 @@ export class ApiGithubService {
 	user: string = '';
 	private baseUserURL: string = 'https://api.github.com/users/';
 	private baseGeoURL: string =
-		'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDP_b0AnBsS4KOWAtSxd09OF19DKxCQWKg&sensor=false&address=';
+		'https://maps.googleapis.com/maps/api/geocode/json?key=APIKEY&sensor=false&address=';
 	userCard: UserCardData | any;
 	userRepo: UserRepositoryData | any;
 	geocoding: GeocodingType | any;
